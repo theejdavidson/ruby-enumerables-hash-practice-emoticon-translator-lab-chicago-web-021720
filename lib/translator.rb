@@ -12,7 +12,7 @@ def load_library(lib)
   memo
 end
   pp get_meaning
-  hash = {"get_meaning":  {get_meaning}, "get_emoticon": {}}
+  hash = {"get_meaning":  get_meaning, "get_emoticon": {}}
   return hash
 end
 
