@@ -6,7 +6,7 @@ def load_library(lib)
   library = YAML.load_file(lib)
   
   pp library
-  hash = {"get_meaning":  {}, :get_emoticon => {}}
+  hash = {"get_meaning":  {}, "get_emoticon": {}}
   return hash
 end
 
