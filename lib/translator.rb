@@ -4,7 +4,9 @@ require "yaml"
 def load_library(lib)
   # code goes here
   library = YAML.load_file(lib)
-  hash = {"get_meaning":  {library}, :get_emoticon => {}}
+  
+  pp library
+  hash = {"get_meaning":  {}, :get_emoticon => {}}
   return hash
 end
 
