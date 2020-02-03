@@ -14,7 +14,6 @@ end
 get_emoticon = library.reduce({}) do |memo, (meaning, emoji_arr)| 
   memo.store(emoji_arr[0], meaning)
   memo
-  pp get_meaning
   hash = {"get_meaning":  get_meaning, "get_emoticon": get_emoticon}
   return hash
 end
