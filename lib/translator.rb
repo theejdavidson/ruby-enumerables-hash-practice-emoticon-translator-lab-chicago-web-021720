@@ -7,8 +7,10 @@ def load_library(lib)
   
   #pp library
   # the keys inside get_meaning hash should be japanese emoticons
-  get_meaning = library.reduce({}) { |memo, (meaning, emoji_arr)| 
-  memo.store(emoji_arr[1], meaning) }
+  get_meaning = library.reduce({}) do |memo, (meaning, emoji_arr)| 
+  memo.store(emoji_arr[1], meaning)
+  memo
+end
   pp get_meaning
   hash = {"get_meaning":  {}, "get_emoticon": {}}
   return hash
