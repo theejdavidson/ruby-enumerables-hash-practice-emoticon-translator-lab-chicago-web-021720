@@ -12,7 +12,7 @@ def load_library(lib)
   memo
 end
 get_emoticon = library.reduce({}) do |memo, (meaning, emoji_arr)| 
-  memo.store(emoji_arr[0], meaning)
+  memo.store(emoji_arr[1], emoji_arr[0])
   memo
 end
   hash = {"get_meaning":  get_meaning, "get_emoticon": get_emoticon}
